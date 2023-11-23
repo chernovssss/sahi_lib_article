@@ -4,6 +4,8 @@
 > Официальный репозиторий: [github](https://github.com/obss/sahi)
   
 
+## Abstract
+
 Современные детекторы плохо справляются с детекцией небольших объектов. 
     Что бы решить эту проблему был разработан SAHI.  
 
@@ -11,13 +13,15 @@ SAHI "с нахлёстом" разрезает изображение на не
     изображений поменьше. На них уже производится инференс, 
     а результаты склеиваются обратно в исходное изображение.
 
+Блокнот с демонстрацией возможностей:
+
+
 Гифка с демонстрацией: 
 <img width="700" alt="teaser" src="https://raw.githubusercontent.com/obss/sahi/main/resources/sliced_inference.gif">  
 
 SAHI может быть использован поверх любого детектора.  
 Имеются [CLI команды](https://github.com/obss/sahi/blob/main/docs/cli.md#predict-command-usage)  
 Интеграция с [roboflow](https://blog.roboflow.com/how-to-use-sahi-to-detect-small-objects/)  
-
 
 
 ## Проблема Small Object Detection  
@@ -37,7 +41,6 @@ SAHI может быть использован поверх любого дет
 6. Scale Variation
 7. Training Data Bias  
 
-[источник_1][1] [источник_2][2]  
 
 Можно обратить внимание на репозиторий 
 [Awesome Tiny Object Detection](https://github.com/kuanhungchen/awesome-tiny-object-detection).
@@ -45,6 +48,7 @@ SAHI может быть использован поверх любого дет
 
 или заглянуть сюда и посмотреть как применяется SAHI и какие результаты даёт:   
 [List of publications that cite SAHI (currently 100+)](https://scholar.google.com/scholar?hl=en&as_sdt=2005&sciodt=0,5&cites=14065474760484865747&scipsc=&q=&scisbd=1)
+
 
 ## Использование
 
@@ -93,5 +97,8 @@ result = get_sliced_prediction(
 | [coco analyse](https://github.com/obss/sahi/blob/main/docs/cli.md#coco-analyse-command-usage)         | calculate and export many error analysis plots                                                                                                                                                                                                                                                                                                                                          |
 | [coco yolov5](https://github.com/obss/sahi/blob/main/docs/cli.md#coco-yolov5-command-usage)           | automatically convert any COCO dataset to [yolov5](https://github.com/ultralytics/yolov5) format                                                                                                                                                                                                                                                                                        |
 
-[1]: https://learnopencv.com/slicing-aided-hyper-inference/ 
-[2]: https://encord.com/blog/slicing-aided-hyper-inference-explained/
+
+## Дополнительные материалы 
+[Exploring SAHI: Slicing Aided Hyper Inference for Small Object Detection](https://learnopencv.com/slicing-aided-hyper-inference/)  
+[Slicing Aided Hyper Inference (SAHI) for Small Object Detection | Explained](https://encord.com/blog/slicing-aided-hyper-inference-explained/)  
+ 
